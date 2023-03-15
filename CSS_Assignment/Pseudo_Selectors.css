@@ -1,0 +1,36 @@
+/* Pseudo Selectors
+Write CSS selectors to style the following HTML and implement the following styles:
+
+
+All paragraphs should have a font-size of 18px.
+
+The first child of each section should have a background color of rgb(255, 255, 0)
+
+The last child of each section should have a background color of rgb(119, 141, 240)
+
+The second list item in each unordered list should have a font-weight of bold.
+
+The last list item in each unordered list should have a text-decoration of underline.
+
+
+
+
+Do not modify the HTML code and use Pseudo CSS selectors like first-child, nth-child */
+
+
+/* css code goes here */
+p{
+    font-size:18px
+}
+section>*:first-child{
+    background-color: rgb(255, 255, 0);
+}
+section>*:last-child{
+    background-color: rgb(119, 141, 240);
+}
+ul>*:nth-child(2){
+    font-weight: bold;
+}
+ul>*:nth-child(3){
+    text-decoration: underline;
+}
