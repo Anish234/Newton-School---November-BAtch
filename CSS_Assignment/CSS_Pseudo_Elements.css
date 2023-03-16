@@ -1,0 +1,24 @@
+/* CSS Pseudo Elements
+You have given some HTML code in the boilerplate.
+Add the following things to pass all the test cases.
+
+
+
+Make the color of the li tag's bullets to be "rgb(144, 238, 144)"
+
+Make the color of the text in the first line of the p tag to be "rgb(0, 0, 255)"
+
+solve the question using first-line and marker pseudo elements */
+
+
+body {
+    line-height: 1.4;
+    font-family: system-ui;
+  }
+  li::marker{
+    list-style-type: disc;
+    color: rgb(144, 238, 144);
+  }
+  p::first-line{
+    color: rgb(0, 0, 255);
+  }
