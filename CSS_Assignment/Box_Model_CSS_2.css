@@ -1,0 +1,46 @@
+/* Box Model CSS - 2
+Create the given image using the CSS Box Model properties to the two divs with classes "first-div" and "second-div".
+
+
+Add the following CSS to div with class="first-div":
+
+Add a padding of 10px.
+
+Add a solid border of width 10px of color rgb(255, 20, 147). Use border shorthand.
+
+Use the margin property to position the div with class="first-div", such that its left bottom corner touches the top right corner of the div with class="second-div", as shown in the image below.
+
+
+
+Add the following CSS to div with class="second-div":
+
+Add a padding of 5px.
+
+Add a solid border of width 20px of color rgb(0, 0, 0). Use border shorthand.
+
+
+
+*Boilerplate for HTML and CSS have been provided. Do not modify the class names.*
+(expand the text window to see the image clearly) */
+
+.first-div {
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    padding: 10px;
+    border: solid 10px  rgb(255, 20, 147);
+    margin-left: 200px;
+    margin-top: -90;
+
+   
+
+}
+
+.second-div {
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    padding: 5px;
+    border: solid 20px rgb(0, 0, 0);
+    
+}
