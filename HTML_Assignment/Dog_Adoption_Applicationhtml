@@ -1,0 +1,33 @@
+<!-- Dog Adoption Application
+Ritesh is your friend and wants to adopt a dog. Create a form with the following fields and the field name will be written in the placeholder. You need to use a form tag for this.
+
+- Name ( use id 'name', placeholder 'Name', type 'text' for this)
+- Phone Number ( use id 'phone', placeholder 'Phone Number', type 'text' for this)
+- Address ( use id 'address', placeholder 'Address', type 'text' for this)
+- Have you ever lived with a Dog before? (its type should be 'checkbox', use id 'checkbox' and value should be 'Have you ever lived with a Dog before? ')
+- Please select your preferred breeds ( make this as a multi-select box with at least 3 options, use a select tag for this with id "multiSelect" )
+- Submit ( use id 'submit', type 'submit' ,value 'Submit' for this ) -->
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Dog Adoption Application</h1>
+        <form method="post">
+            <label for="Name">Name</label>
+            <input type="text" id="name" placeholder="Name" /><br>
+            <label for="Phone">Phone Number</label>
+            <input type="text" id="phone" placeholder="Phone Number" /><br>
+            <label for="Address">Address</label>
+            <input type="text" id="address" placeholder="Address" /><br>
+            <label for="checkbox">Have you ever lived with a Dog before?</label>
+            <input type="checkbox" id="checkbox" value="Have you ever lived with a Dog before?" /><br>
+            <label for="multiSelect">Please select your preferred breeds</label>
+            <select id="multiSelect">
+                <option value="german shepherd" selected>German Shepherd</option>
+                <option value="golden retriever" selected>Golden Retriever</option>
+                <option value="beagle" selected>Beagle</option>
+            </select><br>
+            <input type="submit" id="submit" value="Submit" />
+        </form>
+    </body>
+</html>
