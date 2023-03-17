@@ -1,0 +1,25 @@
+/* Joining Newton School
+Create a div with id="motive", inside it write the text
+"We are joining" followed by a span tag with class="ns"
+and text "Newton School" inside it.
+
+So the rendered output should be "We are joining Newton School", with just "Newton School" inside the span tag
+
+For styling, give #motive element padding of 10px and background-color as black and a font color as white.
+
+The span with class ns will have background-color as red. */
+
+
+/* html code here  */
+<div id="motive">We are joining <span class="ns">Newton School</span></div>
+
+
+/* css code here  */
+#motive{
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+span{
+    background-color: red;
+}
