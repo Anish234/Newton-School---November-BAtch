@@ -1,0 +1,24 @@
+/* Position the containers
+Use CSS to position the two containers
+
+
+Make container1 an inline-element by setting the relevant display properties
+
+Make container2 a block-element by setting the relevant display properties
+
+Position container2 relative to the container1, 10px below and 10px to the right */
+
+
+body {
+    font-size: 20px;
+}
+container1 {
+    display: inline-block;
+}
+
+.container2 {
+    display: block;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
