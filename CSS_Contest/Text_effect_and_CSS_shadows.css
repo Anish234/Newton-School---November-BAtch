@@ -1,0 +1,42 @@
+/* Text effect and CSS shadows
+You have been given some HTML and CSS code initially in the question and you have to produce the output as shown in the image below.
+
+Increase the window size to see the image properly
+
+Implement the following steps to pass all the test cases-
+
+
+
+Make sure that the text inside the divs does not overflow and the overflowing text should be shown by "...".
+
+
+Give the h1 tag a text shadow with "X-coordinate" of 2px , "Y-coordinate" of 2px, "blur radius" of "5px" and color of the shadow as "rgb(255, 0, 0)". */
+
+
+
+/* your code is here */
+
+*{
+    margin:0;
+    padding:0
+}
+
+div{
+    height:10px;
+    border:5px solid red;
+    margin:50px;
+    padding:10px;
+    white-space: nowrap;
+    /* uncomment the below line */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+    
+}
+
+h1{
+    text-shadow: 2px 2px 5px rgb(255, 0, 0);
+    text-align: center;
+    margin-top: 10px;
+
+}

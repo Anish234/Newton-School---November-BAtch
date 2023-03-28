@@ -1,0 +1,59 @@
+/* Flexbox it
+You have been provided with some HTML and CSS code. You have to only use flexbox and get the desired output as shown in the image below.
+
+Implement the following steps to pass all the test cases-
+
+
+Set the "justify-content" attribute of container class to be "space-between"
+
+Set the "display" attribute of item class to be "flex"
+
+Let the items take the extra left over space evenly.
+
+Set the "justify-content" attribute of item class to be "space-between"
+
+Set the "display" attribute of subitem class to be "flex"
+
+Let the subitems take the extra left over space evenly.
+
+Set the "flex-direction" attribute of subitem class to be "column"
+
+Set the "justify-content" attribute of subitem class to be "center" */
+
+
+/* your code is here */
+
+.container {
+    width: 90%;
+    background-color: green;
+    margin: 0 auto;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+   
+    
+  }
+  
+  .item {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    box-sizing: border-box;
+    max-width: 48.7%;
+    height:10em;
+    padding:inherit;
+    background-color: blue;
+    color: #fff;
+   
+    
+  }
+  
+  .subitem {
+    background-color: red;
+    max-width: 22%;
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+  }

@@ -1,0 +1,131 @@
+/* CSS Grids
+Your task is to create a grid of 12 divs
+
+Each of the 12 child divs has a class name .card
+
+Each div with class name .card contains values in capital letters which are
+ONE , TWO ...........upto TWELVE
+
+The parent container div have class .cards
+
+With the change in size only the size of div with class name .cards changes while the number of div per row remains the same
+
+In parent div with class name .cards you need to use CSS which are
+displayshould have value grid
+
+grid-template-columns CSS property which defines the line names and track sizing functions of the grid columns
+
+In grid-template-columns uses repeat() function and supply arguments according to criteria that there should be 3 items in a row and each item should occupy 1fr of space.
+grid-gapshould have value 1 rem
+
+Check out demo video given below */
+
+
+/* your html code is here */
+
+<!DOCTYPE html>
+<html>
+    <body>
+        <div class="cards">
+   <div class="card">ONE</div>
+   <div class="card">TWO</div>
+   <div class="card">THREE</div>
+   <div class="card">FOUR</div>
+   <div class="card">FIVE</div>
+   <div class="card">SIX</div>
+   <div class="card">SEVEN</div>
+   <div class="card">EIGHT</div>
+   <div class="card">NINE</div>
+   <div class="card">TEN</div>
+   <div class="card">ELEVEN</div>
+   <div class="card">TWELVE</div>
+</div>
+    </body>
+</html>
+
+
+
+/* your css is code here */
+
+html {
+    font-size: 22px;
+  }
+  body {
+    padding: 1rem;
+  }
+
+  .card {
+    background-color: rgb(17, 72, 118);
+    color: white;
+    padding: 1rem;
+    text-align: left;
+    height: 4rem;
+    border: 2px solid black;
+  }
+
+  .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  margin: 0 auto;
+  }
+
+.card:nth-child(1) {
+grid-column: 1 / span 1;
+grid-row: 1 / span 1;
+}
+
+.card:nth-child(2) {
+grid-column: 2 / span 1;
+grid-row: 1 / span 1;
+}
+
+.card:nth-child(3) {
+grid-column: 3 / span 1;
+grid-row: 1 / span 1;
+}
+
+.card:nth-child(4) {
+grid-column: 1 / span 1;
+grid-row: 2 / span 1;
+}
+
+.card:nth-child(5) {
+grid-column: 2 / span 1;
+grid-row: 2 / span 1;
+}
+
+.card:nth-child(6) {
+grid-column: 3 / span 1;
+grid-row: 2 / span 1;
+}
+
+.card:nth-child(7) {
+grid-column: 1 / span 1;
+grid-row: 3 / span 1;
+}
+
+.card:nth-child(8) {
+grid-column: 2 / span 1;
+grid-row: 3 / span 1;
+}
+
+.card:nth-child(9) {
+grid-column: 3 / span 1;
+grid-row: 3 / span 1;
+}
+
+.card:nth-child(10) {
+grid-column: 1 / span 1;
+grid-row: 4 / span 1;
+}
+
+.card:nth-child(11) {
+grid-column: 2 / span 1;
+grid-row: 4 / span 1;
+}
+
+.card:nth-child(12) {
+grid-column: 3 / span 1;
+grid-row: 4 / span 1;
+}
