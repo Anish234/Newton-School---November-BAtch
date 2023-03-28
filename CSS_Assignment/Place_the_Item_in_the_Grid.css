@@ -1,0 +1,43 @@
+/* Place the Item in the Grid
+You've specified the HTML markup, it's time to add the CSS. Use the grid properties on holder div
+
+Make a 200px grid with two rows and two columns, and use the repeat function in the CSS grid to establish the rows and columns. Use grid-template-rows and grid-template-columns properties to implement this
+
+The final product should be a 400*400 [2*2] grid where the items are inserted.
+
+(Note that you do not need to change any properties on the item because the items will be positioned automatically after the grid is created.)
+
+Update only the CSS code of the holder, not the HTML markup. */
+
+
+
+
+/* your code is here */
+
+.holder {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(2, 200px);
+ }
+
+ .item {
+     width: 175px;
+     height: 175px;
+     font-size: 3rem;
+ }
+
+ .item-1 {
+     background: red;
+ }
+
+ .item-2 {
+     background: blue;
+ }
+
+ .item-3 {
+     background: green;
+
+ }
+ .item-4{
+     background-color: magenta;
+ }
