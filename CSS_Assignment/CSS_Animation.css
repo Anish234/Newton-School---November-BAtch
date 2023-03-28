@@ -1,0 +1,39 @@
+/* CSS Animation
+Create an animation that makes a square move 600px to the right side and then back in a continuous loop. Use the left CSS property and keyframes properties for this.
+
+The duration of the entire animation should be 2 seconds and it should iterate for infinite times. After 1 second, the box should be on the right end of the screen(by 600px from starting position) and at the end of 2 seconds, it should be back to its starting position.
+Note:- Animate only the left property in animation.
+
+Add the necessary styles to the #square
+
+Add the keyframes that make the square move from left to right and back again
+
+
+Do not modify any class names or ids. */
+
+
+
+/* your code is here */
+
+#square {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: moveSquare;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    left: 0px;
+  }
+  
+  @keyframes moveSquare {
+    0% {
+      left: 0px;
+    }
+    50% {
+      left: 600px;
+    }
+    100% {
+      left:0px;
+    }
+  }
