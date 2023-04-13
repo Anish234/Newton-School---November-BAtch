@@ -1,0 +1,29 @@
+/* CSS Box Model Question
+Create the given image using the CSS box model properties mentioned below
+
+
+Add a padding of 15px to the outer-div
+
+Add a solid border of width 20px of color rgb(245, 135, 135) to the inner-div
+
+Add a padding of 10px to the inner-div */
+
+
+/* your code is here */
+
+body{
+    padding: 15px;
+}
+
+.outer-div {
+    background-color: rgb(254, 74, 74);
+    padding: 15px;
+}
+
+.inner-div{
+    text-align: center;
+    background-color: white;
+    border: solid 20px;
+    color: rgb(245, 135, 135);
+    padding: 10px;
+}
