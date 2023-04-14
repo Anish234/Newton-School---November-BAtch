@@ -1,0 +1,136 @@
+/* Styling Spotify Landing Page - 2
+In continuation with the question "Styling Spotify Landing Page - 1", in this question, we are going to add styles to the Main section.
+
+Please solve the question "Styling Spotify Landing Page - 1" before solving this question
+Part 2
+
+Add the following styles :
+
+
+Select the main section by its Id and add the following styles:
+
+
+Background color of the main section should be the same as the body.
+
+Make the text centerally aligned so that the text is clear to the user.
+
+Add text color of rgb(255, 255, 255) to make it visible.
+
+Add a top and bottom padding of 10px, and right and left padding of 20px. Use padding shorthand property.
+
+
+
+Select the h1 of the main section without adding any class and add the following
+styles:
+
+
+Make the font-weight of value 700 to make the text bolder.
+
+Increase the distance between the h1 and the h2 by giving a line height of 2.
+
+
+
+Select the h2 of the main section without adding classes and add the following
+styles:
+
+
+Make the text bold by giving font-weight property of value 500.
+
+Again, maintain a distance between the h2 and the buttons give line height of 3.
+
+
+
+Select the buttons of the main section without adding any class and add the following
+styles:
+
+
+Give buttons a background color of rgb(255, 255, 255).
+
+To increase the size and make the button text readable add a padding of 12px in all four directions.
+
+Give a bottom margin of 35px to the buttons, to create a distance between the two buttons.
+
+Make the text within the buttons bold of value 500.
+
+To make the buttons a little rounded, give the border a radius of 20px.
+
+While the cursor is over the button element, it should be of type pointer.
+
+Font within the button should be the same as the body's font family.
+
+On mouse hover, buttons' size should scale to 1.02.
+
+For devices with width less than 650px, buttons' width should increase to 100%. */
+
+
+
+
+/* your css code is here */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap'); */
+body {
+  margin: 0;
+  background-color: rgb(25, 20, 20);
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+nav {
+  background-color: rgb(25, 20, 20);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 25px;
+}
+nav img {
+  width: 60px;
+  height: 60px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 15px;
+}
+
+nav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+li a:hover {
+  color: rgb(30, 215, 96);
+}
+#download {
+  background-color: rgb(25, 20, 20);
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+}
+main h1 {
+  font-weight: 700;
+  line-height: 2;
+}
+main h2 {
+  font-weight: 500;
+  line-height: 3;
+}
+main button {
+  background-color: rgb(255, 255, 255);
+  padding: 12px;
+  margin-bottom: 35px;
+  font-weight: 500;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+button:hover {
+  scale: 1.02;
+}
+@media only screen and (max-width: 595px) {
+  main button {
+    width: 100%;
+  }
+}
