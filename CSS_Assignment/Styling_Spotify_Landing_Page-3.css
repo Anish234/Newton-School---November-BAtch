@@ -1,0 +1,184 @@
+/* Styling Spotify Landing Page - 3
+In continuation with the question "Styling Spotify Landing Page - 2", in this question, we are going to add styles to the Table section.
+
+Please solve the question "Styling Spotify Landing Page - 2" before solving this question
+Part 3
+
+Add the following styles :
+
+
+Select the section with the id "difference-table" by its Id and add the following styles:
+
+
+Make the background of color rgb(246, 246, 246) to make it a different section of the landing page.
+
+Make the text centrally aligned so that the content within the section is placed centrally on the screen.
+
+Add a top and bottom padding of 20px, and right and left padding of 40px. Use padding shorthand property.
+
+
+
+Select the h1 of the section without adding any class or Id and add the following styles:
+
+
+To make the text bolder, make the font weight of value 700.
+
+Add a top and bottom padding of 0px, and right and left padding of 50px. Use padding shorthand property.
+
+
+
+Select the table without adding a class or Id and add the following styles:
+
+
+Maximum width of the table should be 500px, and use margin to make it centrally aligned.
+
+Add a top and bottom padding of 20px, and right and left padding of 45px. Use padding shorthand property.
+
+
+
+Select the headings of the table without adding class and add the following styles:
+
+
+Make the font weight of value 300, so that the emphasis is more on the table data and less on the headings.
+
+
+
+Select the table-data rows of the table and add the following styles:
+
+
+To separate each row from one other, give each row's bottom a border of 1px, of type solid, and of color rgb(170, 170, 170). Use border shorthand property.
+
+
+
+Select the icons within the table by their class and add the following styles:
+
+
+Make the Check Mark of color rgb(30, 215, 96), and increase the font size to 30px to make it clear to user.
+
+Make the X Mark of color rgb(255, 0, 0), and increase the font size to 30px.
+
+
+
+Select the button of the section and add the following styles:
+
+
+To make the buttons and the parent element contrasting, give buttons a background of color rgb(25, 20, 20).
+
+Add a top and bottom padding of 12px, and right and left padding of 40px. Use padding shorthand property.
+
+Add a font-weight of value 500 to make the text bold.
+
+To make the buttons a little rounded, give the border a radius of 20px.
+
+While the cursor is over the button element, it should be of type pointer.
+
+Font within the button should be the same as the body's font family.
+
+Make the button's text of color rgb(255, 255, 255) to make it visible. */
+
+/* your css code is here */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap'); */
+body {
+  margin: 0;
+  background-color: rgb(25, 20, 20);
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+nav {
+  background-color: rgb(25, 20, 20);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 25px;
+}
+nav img {
+  width: 60px;
+  height: 60px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 15px;
+}
+
+nav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+li a:hover {
+  color: rgb(30, 215, 96);
+}
+#download {
+  background-color: rgb(25, 20, 20);
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+}
+main h1 {
+  font-weight: 700;
+  line-height: 2;
+}
+main h2 {
+  font-weight: 500;
+  line-height: 3;
+}
+main button {
+  background-color: rgb(255, 255, 255);
+  padding: 12px;
+  margin-bottom: 35px;
+  font-weight: 500;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+button:hover {
+  scale: 1.02;
+}
+@media only screen and (max-width: 595px) {
+  main button {
+    width: 100%;
+  }
+}
+#difference-table {
+  background-color: rgb(246, 246, 246);
+  text-align: center;
+  padding: 20px 40px;
+}
+section h1 {
+  font-weight: 700;
+  padding: 0px 50px;
+}
+table {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px 45px;
+}
+table th {
+  font-weight: 300;
+}
+table td {
+  border-bottom: 1px solid rgb(170, 170, 170);
+}
+.fa-circle-check {
+  color: rgb(30, 215, 96);
+  font-size: 30px;
+}
+.fa-circle-xmark {
+  color: rgb(255, 0, 0);
+  font-size: 30px;
+}
+section button {
+  background-color: rgb(25, 20, 20);
+  padding: 12px 40px;
+  font-weight: 500;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  color: rgb(255, 255, 255);
+}
