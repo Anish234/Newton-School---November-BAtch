@@ -1,0 +1,264 @@
+/* Styling Spotify Landing Page - 4
+In continuation with the question "Styling Spotify Landing Page - 3", in this question, we are going to add styles to the Articles section.
+
+Please solve the question "Styling Spotify Landing Page - 3" before solving this question
+Part 4
+
+Add the following styles :
+
+
+Select the section with the id "premium" by its Id and add the following styles:
+
+
+Make the background of color rgb(255, 255, 255) to make it a different section of the landing page.
+
+Make the text centrally aligned.
+
+Add a padding of 20px in all four directions so that the text content is placed centrally on the screen.
+
+
+
+Select the h2 of the section without adding any class and add the following styles:
+
+
+Remove the margin from the element, which reduces the distance between the h2 and other surrounding elements.
+
+
+
+Select the parent element of the articles without adding classes or ids and add the following styles:
+
+
+Display the price cards as shown in the video below, i. e., 2 columns and 2 rows, using grid with each price card occupying a fraction of the whole space available.
+
+There should a gap of 10px between the price cards.
+
+Text within the cards should be left aligned.
+
+Add a top and bottom padding of 20px, and right and left padding of 100px. Use padding shorthand property.
+
+On devices with a width less than 650px, articles should be displayed as shown in the video below, i. e., cards should be displayed in a single column, and every card should have its own row. Again use grid to achieve this task. Also, give padding of 20px in all four directions.
+
+
+
+Select all the articles of the ".price-cards" by their class and add the following styles:
+
+
+To make the borders of the card a little rounded from the corners, add a radius to the borders of 10px.
+
+As we'll be not using borders to differentiate between cards, add box shadow of 0px horizontal and vertical-offset, 0px of blur radius as well, and 5px of spread radius. Shadow should be the color of rgb(170, 170, 170).
+
+Add a padding of 20px in all four directions.
+
+
+
+Select the section with the class "card-header" and add the following styles:
+
+
+To separate the card header from the card body, give each card header's bottom a border of 1px, of type solid, and of color rgb(170, 170, 170). Again, use border shorthand property.
+
+Select the spans within the card header section and make it display in such a way that its width is the same as the content width, and is arranged next to each other. Increase the font of the text to 0.75rem, add a background of color rgb(13, 114, 234), with text's color rgb(255, 255, 255), add a padding of
+5px in all four sides, make the font-weight of value 500 and add a radius to the border, and a margin to the bottom of 5px.
+
+Select the h3 within the card header, and remove its bottom margin.
+
+Select the p tags within the card header, remove its bottom margin as well, and make the font weight of value 300.
+
+Select the list items within the card body, and make their font-weight of value
+500.
+
+
+Select the buttons of the price cards and add the following styles:
+
+
+Give buttons a background color of rgb(25, 20, 20).
+
+Add a top and bottom padding of 12px, and right and left padding of 40px. Use padding shorthand property.
+
+Text font should be the same as the body's font,-family and the color of the text should be rgb(255, 255, 255).
+
+Make the font-weight of value 500.
+
+Give border a radius of 20px.
+
+While the cursor is over the button element, it should be of type pointer.
+
+Font within the button should be the same as the body's font.
+
+On hover, buttons' size should scale to 1.02.
+
+Buttons' width should be 100%. */
+
+/* your css code is here */
+
+body {
+  margin: 0;
+  background-color: rgb(25, 20, 20);
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+nav {
+  background-color: rgb(25, 20, 20);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 25px;
+}
+nav img {
+  width: 60px;
+  height: 60px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 15px;
+}
+
+nav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+li a:hover {
+  color: rgb(30, 215, 96);
+}
+#download {
+  background-color: rgb(25, 20, 20);
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+}
+main h1 {
+  font-weight: 700;
+  line-height: 2;
+}
+main h2 {
+  font-weight: 500;
+  line-height: 3;
+}
+main button {
+  background-color: rgb(255, 255, 255);
+  padding: 12px;
+  margin-bottom: 35px;
+  font-weight: 500;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+button:hover {
+  scale: 1.02;
+}
+@media only screen and (max-width: 595px) {
+  main button {
+    width: 100%;
+  }
+}
+#difference-table {
+  background-color: rgb(246, 246, 246);
+  text-align: center;
+  padding: 20px 40px;
+}
+section h1 {
+  font-weight: 700;
+  padding: 0px 50px;
+}
+table {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px 45px;
+}
+table th {
+  font-weight: 300;
+}
+table td {
+  border-bottom: 1px solid rgb(170, 170, 170);
+}
+.fa-circle-check {
+  color: rgb(30, 215, 96);
+  font-size: 30px;
+}
+.fa-circle-xmark {
+  color: rgb(255, 0, 0);
+  font-size: 30px;
+}
+section button {
+  background-color: rgb(25, 20, 20);
+  padding: 12px 40px;
+  font-weight: 500;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  color: rgb(255, 255, 255);
+}
+#premium {
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 20px;
+}
+#premium h2 {
+  margin: 0;
+}
+.price-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  text-align: left;
+  padding: 20px 100px;
+}
+.price-cards > article {
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgb(170, 170, 170);
+  padding: 20px;
+}
+article button {
+  background-color: rgb(25, 20, 20);
+  padding: 12px 40px;
+  font-family: inherit;
+  font-weight: 500;
+  border-radius: 20px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  width: 100%;
+}
+article button:hover {
+  transform: scale(1.02);
+}
+.card-header {
+  border-bottom: 1px solid rgb(170, 170, 170);
+}
+.card-header span {
+  display: inline-block;
+  font-size: 0.75rem;
+  background-color: rgb(13, 114, 234);
+  color: rgb(255, 255, 255);
+  padding: 5px;
+  font-weight: 500;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+.card-header h3 {
+  margin-bottom: 0;
+}
+.card-header p {
+  margin: 0;
+  font-weight: 300;
+}
+.card-body li {
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 650px) {
+  .price-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    padding: 20px;
+  }
+  .card-header span {
+    display: inline-block;
+  }
+}
